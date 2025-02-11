@@ -24,4 +24,6 @@ describe('Newsletter Subscribe Form', () => {
     cy.getByData('submit-button').click();
     cy.getByData('server-error-message').should('exist').and('have.css', 'color', 'rgb(198, 43, 52)').contains(email);
   });
+
+  it.skip('What happens if the input field is blank and they click the subscribe button?', () => {});
 })
